@@ -24,3 +24,11 @@ if user_input:
         st.success(f"**PGSC ID:** `{result['pgsc_id']}`\n\n**E-value:** `{result['evalue']}`")
     else:
         st.error("Soltu ID not found in the dataset.")
+
+# Footer / Créditos
+st.markdown("---")
+st.markdown(
+    "🧬 App desarrollada por **Juan Ignacio Cortelezzi** en el "
+    "[Laboratorio de Biología Molecular Vegetal (INGEBI, CONICET)](https://www.ingebi-conicet.gov.ar).",
+    unsafe_allow_html=True
+)
